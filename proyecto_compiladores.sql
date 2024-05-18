@@ -1,0 +1,22 @@
+CREATE DATABASE AHORCADO;
+
+USE AHORCADO
+
+CREATE TABLE palabras (
+    id INT PRIMARY KEY IDENTITY(1,1),
+    texto NVARCHAR(100) NOT NULL
+);
+
+
+INSERT INTO palabras (texto) VALUES ('PROGRAMACION');
+INSERT INTO palabras (texto) VALUES ('DESARROLLO');
+INSERT INTO palabras (texto) VALUES ('INFORMATICA');
+INSERT INTO palabras (texto) VALUES ('COMPUTADORA');
+INSERT INTO palabras (texto) VALUES ('TECLADO');
+INSERT INTO palabras (texto) VALUES ('RATON');
+INSERT INTO palabras (texto) VALUES ('MONITOR');
+INSERT INTO palabras (texto) VALUES ('MEMORIA');
+INSERT INTO palabras (texto) VALUES ('PROCESADOR');
+INSERT INTO palabras (texto) VALUES ('INTERNET');
+
+SELECT *FROM palabras
