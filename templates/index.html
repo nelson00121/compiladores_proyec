@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ahorcado</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script>
+        {% if intentos_restantes <= 0 %}
+            alert("¡Has perdido! La palabra era {{ palabra_mostrada }}");
+        {% endif %}
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Juego del Ahorcado</h1>
+        <div class="ahorcado">
+            <pre>{{ dibujo_ahorcado }}</pre>
+        </div>
+        <p>Palabra: {{ palabra_mostrada }}</p>
+        <p>Intentos restantes: {{ intentos_restantes }}</p>
+        <form method="POST" action="/">
+            <label for="letra">Introduce una letra:</label>
+            <input type="text" id="letra" name="letra" maxlength="1" required>
+            <button type="submit">Adivinar</button>
+        </form>
+        {% if mensaje %}
+            <p>{{ mensaje }}</p>
+        {% endif %}
+        <p>Letras adivinadas: {{ letras_adivinadas }}</p>
+    </div>
+</body>
+</html>
+
+

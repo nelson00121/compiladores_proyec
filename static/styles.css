@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e8f5e9; /* Color de fondo más claro y amigable */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    border: 2px solid #4caf50; /* Borde de color verde más vivo */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 30px; /* Más espacio interno */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Sombra más prominente */
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #2e7d32; /* Color verde oscuro para el título */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.ahorcado {
+    font-size: 1.5em; /* Tamaño de fuente más grande */
+    color: #424242; /* Color de texto gris oscuro */
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    text-transform: uppercase;
+    font-size: 1.5em; /* Tamaño de fuente más grande */
+    padding: 10px; /* Más espacio interno */
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+}
+
+button {
+    padding: 10px 20px; /* Más espacio interno */
+    font-size: 1.2em;
+    margin-left: 10px;
+    background-color: #4caf50; /* Color verde */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+button:hover {
+    background-color: #388e3c; /* Color verde más oscuro al pasar el mouse */
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+p {
+    color: #333333;
+    margin: 10px 0; /* Espaciado vertical */
+}
+
